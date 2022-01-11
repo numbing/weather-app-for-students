@@ -24,7 +24,7 @@ for (let i = 0; i < data.length; i++) {
 function getInput(event, answer) {
     myAnswer = event.target.parentElement.querySelector('.answerInput').value
 
-    if (myAnswer === answer) {
+    if (myAnswer.toLocaleLowerCase() === answer.toLocaleLowerCase()) {
         myAnswer = event.target.parentElement.querySelector('.result').innerHTML = "niceeee"
     } else {
         myAnswer = event.target.parentElement.querySelector('.result').innerHTML = "wrong"
